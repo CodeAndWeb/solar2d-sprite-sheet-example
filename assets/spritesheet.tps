@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>3.5.0b3</string>
         <key>fileName</key>
-        <string>/Users/sk/Programming/TexturePacker-Corona-ImageSheets/spritesheet.tps</string>
+        <string>/Users/sk/Programming/TexturePacker-Corona-ImageSheets/assets/spritesheet.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -55,7 +55,7 @@
         <key>dataFormat</key>
         <string>corona-imagesheet</string>
         <key>textureFileName</key>
-        <filename>spritesheet{v}.png</filename>
+        <filename>../corona/spritesheet{v}.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -153,7 +153,7 @@
             <key>lua</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>spritesheet{v}.lua</filename>
+                <filename>../corona/spritesheet{v}.lua</filename>
             </struct>
         </map>
         <key>multiPack</key>
