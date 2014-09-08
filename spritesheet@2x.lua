@@ -1,14 +1,11 @@
 --
--- created with TexturePacker (http://www.texturepacker.com)
+-- created with TexturePacker (http://www.codeandweb.com/texturepacker)
 --
--- $TexturePacker:SmartUpdate:ad4a2ecb8864691b06361715ff577c20$
+-- $TexturePacker:SmartUpdate:5ff5d03bc4cbc03c9e81eb22ce0108e3:36c92951b7b049194277325427ab69b8:ece0d2ef682b236c674b564b3d9a2535$
 --
--- local sheetInfo = require("myExportedImageSheet") -- lua file that Texture packer published
---
--- local myImageSheet = graphics.newImageSheet( "ImageSheet.png", sheetInfo:getSheet() ) -- ImageSheet.png is the image Texture packer published
---
--- local myImage1 = display.newImage( myImageSheet , sheetInfo:getFrameIndex("image_name1"))
--- local myImage2 = display.newImage( myImageSheet , sheetInfo:getFrameIndex("image_name2"))
+-- local sheetInfo = require("mysheet")
+-- local myImageSheet = graphics.newImageSheet( "mysheet.png", sheetInfo:getSheet() )
+-- local sprite = display.newSprite( myImageSheet , {frames={sheetInfo:getFrameIndex("sprite")}} )
 --
 
 local SheetInfo = {}
@@ -43,12 +40,12 @@ SheetInfo.sheet =
         },
         {
             -- drink
-            x=896,
+            x=894,
             y=134,
-            width=72,
+            width=70,
             height=168,
 
-            sourceX = 6,
+            sourceX = 8,
             sourceY = 4,
             sourceWidth = 79,
             sourceHeight = 188
@@ -69,10 +66,10 @@ SheetInfo.sheet =
             -- hotdog
             x=772,
             y=134,
-            width=120,
+            width=118,
             height=64,
 
-            sourceX = 4,
+            sourceX = 6,
             sourceY = 0,
             sourceWidth = 126,
             sourceHeight = 67
@@ -93,11 +90,11 @@ SheetInfo.sheet =
             -- icecream2
             x=648,
             y=278,
-            width=44,
-            height=94,
+            width=42,
+            height=92,
 
-            sourceX = 0,
-            sourceY = 4,
+            sourceX = 2,
+            sourceY = 6,
             sourceWidth = 47,
             sourceHeight = 101
         },
@@ -106,10 +103,10 @@ SheetInfo.sheet =
             x=710,
             y=218,
             width=46,
-            height=108,
+            height=106,
 
             sourceX = 2,
-            sourceY = 8,
+            sourceY = 10,
             sourceWidth = 50,
             sourceHeight = 118
         },

@@ -12,6 +12,8 @@ local sheetInfo = require("spritesheet") -- lua file that Texture packer publish
 local myImageSheet = graphics.newImageSheet( "spritesheet.png", sheetInfo:getSheet() )
 
 local background = display.newImage( myImageSheet , sheetInfo:getFrameIndex("bkg_cor"))
+background.x=160
+background.y=240
 
 local hamburger1 = display.newImage( myImageSheet , sheetInfo:getFrameIndex("hamburger"))
 hamburger1.x = 150

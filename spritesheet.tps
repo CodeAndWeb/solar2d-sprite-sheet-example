@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data version="1.0">
     <struct type="Settings">
-        <key>variation</key>
-        <string>main</string>
-        <key>verbose</key>
-        <false/>
+        <key>fileFormatVersion</key>
+        <int>3</int>
+        <key>texturePackerVersion</key>
+        <string>3.5.0b3</string>
+        <key>fileName</key>
+        <string>/Users/sk/Programming/TexturePacker-Corona-ImageSheets/spritesheet.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
                 <key>scale</key>
+                <double>1</double>
+                <key>extension</key>
+                <string>@2x</string>
+                <key>spriteFilter</key>
+                <string></string>
+                <key>acceptFractionalValues</key>
+                <false/>
+                <key>maxTextureSize</key>
+                <QSize>
+                    <key>width</key>
+                    <int>-1</int>
+                    <key>height</key>
+                    <int>-1</int>
+                </QSize>
+            </struct>
+            <struct type="AutoSDSettings">
+                <key>scale</key>
                 <double>0.5</double>
                 <key>extension</key>
+                <string></string>
+                <key>spriteFilter</key>
                 <string></string>
                 <key>acceptFractionalValues</key>
                 <false/>
@@ -25,20 +46,16 @@
         </array>
         <key>allowRotation</key>
         <false/>
-        <key>quiet</key>
-        <false/>
         <key>premultiplyAlpha</key>
         <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
         <uint>72</uint>
-        <key>allowFreeSize</key>
-        <true/>
         <key>dataFormat</key>
         <string>corona-imagesheet</string>
         <key>textureFileName</key>
-        <filename>spritesheet@2x.png</filename>
+        <filename>spritesheet{v}.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -61,6 +78,8 @@
         <uint>80</uint>
         <key>pngOptimizationLevel</key>
         <uint>1</uint>
+        <key>webpQualityLevel</key>
+        <uint>101</uint>
         <key>textureSubPath</key>
         <string></string>
         <key>textureFormat</key>
@@ -89,6 +108,12 @@
             <enum type="AlgorithmSettings::AlgorithmId">MaxRects</enum>
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
+            <key>sizeConstraints</key>
+            <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
+            <key>forceSquared</key>
+            <false/>
+            <key>forceWordAligned</key>
+            <false/>
             <key>maxRects</key>
             <struct type="AlgorithmMaxRectsSettings">
                 <key>heuristic</key>
@@ -108,8 +133,6 @@
             <enum type="AndEngine::MinFilter">Linear</enum>
             <key>packageName</key>
             <string>Texture</string>
-            <key>javaFileName</key>
-            <filename>spritesheet.java</filename>
             <key>wrap</key>
             <struct type="AndEngineWrap">
                 <key>s</key>
@@ -120,36 +143,56 @@
             <key>magFilter</key>
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
-        <key>dataFileName</key>
-        <filename>spritesheet@2x.lua</filename>
-        <key>mainExtension</key>
-        <string>@2x</string>
+        <key>dataFileNames</key>
+        <map type="GFileNameMap">
+            <key>java</key>
+            <struct type="DataFile">
+                <key>name</key>
+                <filename>spritesheet.java</filename>
+            </struct>
+            <key>lua</key>
+            <struct type="DataFile">
+                <key>name</key>
+                <filename>spritesheet{v}.lua</filename>
+            </struct>
+        </map>
+        <key>multiPack</key>
+        <false/>
         <key>forceIdenticalLayout</key>
         <true/>
         <key>outputFormat</key>
         <enum type="SettingsBase::OutputFormat">RGBA8888</enum>
+        <key>contentProtection</key>
+        <struct type="ContentProtection">
+            <key>key</key>
+            <string></string>
+        </struct>
         <key>autoAliasEnabled</key>
         <true/>
         <key>trimSpriteNames</key>
         <false/>
+        <key>prependSmartFolderName</key>
+        <false/>
+        <key>cleanTransparentPixels</key>
+        <true/>
         <key>globalSpriteSettings</key>
         <struct type="SpriteSettings">
             <key>scale</key>
             <double>1</double>
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
-            <key>crop</key>
-            <false/>
             <key>innerPadding</key>
             <uint>0</uint>
             <key>extrude</key>
             <uint>0</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
-            <key>trim</key>
-            <true/>
+            <key>trimMode</key>
+            <enum type="SpriteSettings::TrimMode">Trim</enum>
             <key>heuristicMask</key>
             <false/>
+            <key>pivotPoint</key>
+            <enum type="SpriteSettings::PivotPoint">Center</enum>
         </struct>
         <key>fileList</key>
         <array>
@@ -158,6 +201,8 @@
         <key>ignoreFileList</key>
         <array/>
         <key>replaceList</key>
+        <array/>
+        <key>ignoredWarnings</key>
         <array/>
         <key>commonDivisorX</key>
         <uint>1</uint>
