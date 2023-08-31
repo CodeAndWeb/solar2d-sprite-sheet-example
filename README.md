@@ -1,8 +1,11 @@
-TexturePacker-Corona-ImageSheets
-================================
+Solar2D Image Sheet Example
+===========================
 
-Example code for the short [tutorial](http://www.codeandweb.com/blog/2012/05/09/texturepacker-corona-imagesheet-tutorial) explaining how to use[TexturePacker](http://www.codeandweb.com/texturepacker) with Corona SDK.
+Sample code which demonstrates how to use sprite sheets generated with 
+[TexturePacker](https://www.codeandweb.com/texturepacker) in a
+[Solar2D](https://solar2d.com) application.
 
-This enhanced version also covers creating and playing animations.
+A detailed tutorial can be found
+[here](https://www.codeandweb.com/texturepacker/tutorials/texturepacker-corona-imagesheet-tutorial).
 
-![image](wiki/screenshot.png)
+![Screenshot of demo app](screenshot.png)
