@@ -12,7 +12,7 @@ display.setStatusBar(display.HiddenStatusBar)
 print("content height: " .. display.actualContentHeight .. ", display height: " .. display.pixelWidth .. ", scale: " .. 1/display.contentScaleX)
 
 -- the Lua file that TexturePacker published: it contains the data required by newImageSheet()
--- and it also contains a function getFrameIndex() to retrieve frames by their names 
+-- and it also contains a function getFrameIndex() to retrieve frames by their names
 local sheetInfo = require("spritesheets.cityscene")
 
 -- init the image sheet
@@ -28,11 +28,8 @@ background.y = display.contentCenterY
 --capguy.x = display.contentHeight * .2
 --capguy.y = display.contentHeight * .8
 
--- look up frame numbers for all animation frames
-local framesNumbers = {}
-for i=1,8 do
-    framesNumbers[i] = sheetInfo:getFrameIndex(string.format("capguy/walk/%04d", i))
-end
+-- TexturePacker can autodetect animations and export animation frame indices
+local framesNumbers = sheetInfo:getAnimation("capguy/walk");
 
 local sequenceData = {
     {

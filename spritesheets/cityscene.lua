@@ -1,7 +1,7 @@
 --
 -- created with TexturePacker - https://www.codeandweb.com/texturepacker
 --
--- $TexturePacker:SmartUpdate:39ca43cbda42de10c4f185044633c92e:61cf83aea184bf9e43dc83ea9eebddc1:904c3326d7bee1b4f0177cef145fb8d8$
+-- $TexturePacker:SmartUpdate:b2371acd3e9f1328893beda9b52eb353:61cf83aea184bf9e43dc83ea9eebddc1:904c3326d7bee1b4f0177cef145fb8d8$
 --
 -- local sheetInfo = require("mysheet")
 -- local myImageSheet = graphics.newImageSheet( "mysheet.png", sheetInfo:getSheet() )
@@ -126,7 +126,6 @@ SheetInfo.sheet =
 
 SheetInfo.frameIndex =
 {
-
     ["background"] = 1,
     ["capguy/walk/0001"] = 2,
     ["capguy/walk/0002"] = 3,
@@ -138,12 +137,21 @@ SheetInfo.frameIndex =
     ["capguy/walk/0008"] = 9,
 }
 
+SheetInfo.animation = 
+{
+   ["capguy/walk"] = { 2, 3, 4, 5, 6, 7, 8, 9 }
+}
+
 function SheetInfo:getSheet()
     return self.sheet;
 end
 
 function SheetInfo:getFrameIndex(name)
     return self.frameIndex[name];
+end
+
+function SheetInfo:getAnimation(name)
+    return self.animation[name];
 end
 
 return SheetInfo
